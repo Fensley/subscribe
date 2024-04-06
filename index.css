@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 600px;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(81, 81, 175, 0.1) 0px 4px 16px,
+    rgba(0, 0, 255, 0.05) 0px 8px 32px;
+}
+.para {
+  padding-bottom: 15px;
+}
+.input1 {
+  height: 49px;
+  width: 290px;
+  position: relative;
+  right: 8px;
+}
+.input1:focus {
+  outline: none;
+  color: black;
+}
+
+.input1::placeholder {
+  padding: 10px;
+  color: black;
+  font-size: 15px;
+}
+
+button {
+  border-radius: 6px;
+  border: none;
+  background-color: #3d9fff;
+  height: 55px;
+  width: 166px;
+}
+.send {
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: rgb(225, 232, 253) 0px 4px;
+}
+.send:focus {
+  opacity: 0.5;
+}
+.last {
+  display: flex;
+  margin: 10px;
+  width: 500px;
+  position: relative;
+  right: -45px;
+}
+.last p {
+  position: relative;
+  top: 10px;
+  right: -5px;
+}
+#check {
+  width: 18px;
+  border-color: gray;
+}
+.fa-solid {
+  position: relative;
+  right: -8px;
+}
+@media (max-width: 660px) {
+  .input1 {
+    height: 44px;
+    width: 190px;
+    position: relative;
+    right: 8px;
+    border-radius: 6px;
+    border: 1px solid gray;
+  }
+  button {
+    border-radius: 6px;
+    border: none;
+    background-color: #3d9fff;
+    height: 47px;
+    width: 100px;
+  }
+  .send {
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgb(225, 232, 253) 0px 4px;
+  }
+  .input1::placeholder {
+    padding: 10px;
+    color: black;
+    font-size: 12px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 340px;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(81, 81, 175, 0.1) 0px 4px 16px,
+      rgba(0, 0, 255, 0.05) 0px 8px 32px;
+  }
+  .last {
+    display: flex;
+    margin: 10px;
+    width: 380px;
+    position: relative;
+    right: 1px;
+  }
+}
